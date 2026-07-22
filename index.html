@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- EDIT: Replace the name and university below -->
+  <title>Dr. Your Name | Assistant Professor</title>
+  <meta
+    name="description"
+    content="Academic website of Dr. Your Name, Assistant Professor researching artificial intelligence, cybersecurity, wireless systems, and post-quantum security."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">YN</span>
+        <span>Dr. Your Name</span>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span class="sr-only">Open navigation</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Assistant Professor · Computer Science / Engineering</p>
+
+          <!-- EDIT: Replace the name, university, and biography -->
+          <h1>Dr. Your Name</h1>
+          <p class="hero-lead">
+            I research secure and intelligent computing at the intersection of
+            <strong>artificial intelligence</strong>,
+            <strong>cybersecurity</strong>,
+            <strong>wireless systems</strong>, and
+            <strong>post-quantum security</strong>.
+          </p>
+
+          <p class="hero-description">
+            My work explores how learning-enabled and connected systems can remain
+            trustworthy, resilient, private, and secure against both present-day
+            and emerging quantum-era threats.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#research">Explore my research</a>
+
+            <!-- EDIT: Add a file named cv.pdf to the repository -->
+            <a class="button secondary" href="cv.pdf">Download CV</a>
+          </div>
+
+          <div class="profile-links" aria-label="Academic profiles">
+            <!-- EDIT: Replace # with your actual profile URLs -->
+            <a href="#" aria-label="Google Scholar profile">Google Scholar</a>
+            <a href="#" aria-label="ORCID profile">ORCID</a>
+            <a href="#" aria-label="GitHub profile">GitHub</a>
+            <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="identity-card" aria-label="Professional information">
+          <!-- Replace this placeholder with:
+               <img class="profile-photo" src="profile.jpg" alt="Portrait of Dr. Your Name">
+          -->
+          <div class="portrait-placeholder" aria-label="Profile photo placeholder">
+            <span>YN</span>
+            <small>Add profile.jpg</small>
+          </div>
+
+          <div>
+            <h2>Dr. Your Name</h2>
+            <p>Assistant Professor</p>
+            <p>Department of [Department Name]</p>
+            <p>[University Name]</p>
+          </div>
+
+          <dl class="quick-details">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:your.email@university.edu">your.email@university.edu</a></dd>
+            </div>
+            <div>
+              <dt>Office</dt>
+              <dd>[Building and Room]</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>[City, State/Country]</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <p class="section-label">About</p>
+        <h2>Researcher, educator, and mentor</h2>
+
+        <!-- EDIT: Replace this paragraph with your biography -->
+        <p class="large-text">
+          I am an Assistant Professor in the Department of [Department Name] at
+          [University Name]. My research combines artificial intelligence,
+          cybersecurity, wireless and networked systems, and post-quantum
+          technologies. I am particularly interested in building practical
+          security mechanisms for intelligent, connected, and resource-constrained
+          systems.
+        </p>
+
+        <p>
+          Before joining [University Name], I completed my Ph.D. in [Field] at
+          [University], where I worked on [brief dissertation topic]. I welcome
+          collaboration with students and researchers interested in secure AI,
+          wireless security, next-generation networks, privacy, and quantum-safe
+          computing.
+        </p>
+
+        <div class="callout">
+          <div>
+            <p class="callout-title">Prospective students</p>
+            <p>
+              I am interested in working with motivated undergraduate and graduate
+              students. Please read the research areas below and email me with your
+              CV, interests, and a brief description of relevant experience.
+            </p>
+          </div>
+          <a class="text-link" href="#contact">How to contact me →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="research">
+      <div class="container">
+        <p class="section-label">Research</p>
+        <div class="section-heading">
+          <div>
+            <h2>Research directions</h2>
+            <p>
+              My group develops secure, intelligent, and future-ready systems
+              across four connected research themes.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-grid research-grid">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>AI for Cybersecurity</h3>
+            <p>
+              Machine learning methods for threat detection, cyber defense,
+              vulnerability analysis, anomaly detection, and security operations.
+            </p>
+            <ul class="tag-list" aria-label="Related topics">
+              <li>Threat detection</li>
+              <li>Adversarial learning</li>
+              <li>Security analytics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>Security of AI Systems</h3>
+            <p>
+              Trustworthy and resilient AI, including attacks on learning systems,
+              privacy-preserving learning, explainability, and robust deployment.
+            </p>
+            <ul class="tag-list" aria-label="Related topics">
+              <li>Trustworthy AI</li>
+              <li>Privacy</li>
+              <li>Robustness</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>Secure Wireless Systems</h3>
+            <p>
+              Security and privacy for wireless, mobile, edge, Internet of Things,
+              cyber-physical, and next-generation communication systems.
+            </p>
+            <ul class="tag-list" aria-label="Related topics">
+              <li>Wireless security</li>
+              <li>IoT and edge</li>
+              <li>NextG networks</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="card-number">04</span>
+            <h3>Post-Quantum Security</h3>
+            <p>
+              Quantum-resistant cryptography and migration strategies for
+              connected systems, constrained devices, and future network
+              infrastructure.
+            </p>
+            <ul class="tag-list" aria-label="Related topics">
+              <li>Quantum-safe systems</li>
+              <li>Cryptographic agility</li>
+              <li>PQC deployment</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="research-statement">
+          <p class="section-label">Research vision</p>
+          <blockquote>
+            How can we build intelligent and connected systems that remain
+            dependable as attackers, networks, and computing technologies evolve?
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="container">
+        <p class="section-label">Publications</p>
+        <div class="section-heading">
+          <div>
+            <h2>Selected publications</h2>
+            <p>
+              Replace the sample entries below with your papers. Add links to the
+              paper, code, data, slides, or BibTeX where available.
+            </p>
+          </div>
+          <!-- EDIT: Replace # with your Google Scholar URL -->
+          <a class="button secondary small" href="#">View all on Google Scholar</a>
+        </div>
+
+        <div class="publication-list">
+          <!-- SAMPLE PUBLICATION: Replace all bracketed text -->
+          <article class="publication">
+            <div class="publication-year">2026</div>
+            <div>
+              <h3>[Your paper title about AI and cybersecurity]</h3>
+              <p class="authors">
+                <strong>Your Name</strong>, Coauthor One, and Coauthor Two
+              </p>
+              <p class="venue">[Conference or Journal Name], 2026</p>
+              <div class="publication-links">
+                <a href="#">Paper</a>
+                <a href="#">Code</a>
+                <a href="#">BibTeX</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-year">2025</div>
+            <div>
+              <h3>[Your paper title about wireless or network security]</h3>
+              <p class="authors">
+                Coauthor One, <strong>Your Name</strong>, and Coauthor Two
+              </p>
+              <p class="venue">[Conference or Journal Name], 2025</p>
+              <div class="publication-links">
+                <a href="#">Paper</a>
+                <a href="#">Slides</a>
+                <a href="#">BibTeX</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-year">2024</div>
+            <div>
+              <h3>[Your paper title about post-quantum security]</h3>
+              <p class="authors">
+                <strong>Your Name</strong> and Coauthor One
+              </p>
+              <p class="venue">[Conference or Journal Name], 2024</p>
+              <div class="publication-links">
+                <a href="#">Paper</a>
+                <a href="#">Data</a>
+                <a href="#">BibTeX</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="teaching">
+      <div class="container">
+        <p class="section-label">Teaching</p>
+        <div class="section-heading">
+          <div>
+            <h2>Courses and teaching interests</h2>
+            <p>
+              Replace these examples with the courses you currently teach or have
+              taught.
+            </p>
+          </div>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <p class="course-term">[Fall 2026]</p>
+            <h3>[CS 4XX] Cybersecurity</h3>
+            <p>
+              Foundations of modern cybersecurity, threat models, network and
+              systems security, secure design, and applied defense.
+            </p>
+            <div class="course-links">
+              <a href="#">Course page</a>
+              <a href="#">Syllabus</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <p class="course-term">[Spring 2026]</p>
+            <h3>[CS 4XX] Artificial Intelligence</h3>
+            <p>
+              Core AI and machine learning methods, with attention to robust,
+              responsible, privacy-aware, and secure deployment.
+            </p>
+            <div class="course-links">
+              <a href="#">Course page</a>
+              <a href="#">Syllabus</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <p class="course-term">[Fall 2025]</p>
+            <h3>[ECE 5XX] Wireless and Network Security</h3>
+            <p>
+              Security challenges and defense mechanisms for wireless, mobile,
+              Internet of Things, and next-generation networked systems.
+            </p>
+            <div class="course-links">
+              <a href="#">Course page</a>
+              <a href="#">Syllabus</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <p class="course-term">[Special Topics]</p>
+            <h3>[CS 5XX] Post-Quantum Security</h3>
+            <p>
+              Quantum threats, post-quantum cryptographic approaches,
+              implementation considerations, and migration planning.
+            </p>
+            <div class="course-links">
+              <a href="#">Course page</a>
+              <a href="#">Reading list</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="teaching-note">
+          <h3>Teaching philosophy</h3>
+          <p>
+            My teaching connects foundational ideas with practical systems,
+            current research, and hands-on problem solving. I aim to help students
+            develop both technical depth and the ability to reason critically
+            about security, privacy, reliability, and societal impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Let’s connect</h2>
+          <p class="large-text">
+            I welcome conversations about research collaboration, student
+            projects, invited talks, and academic service.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <dl>
+            <div>
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:your.email@university.edu">
+                  your.email@university.edu
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt>Office</dt>
+              <dd>[Building and Room]</dd>
+            </div>
+            <div>
+              <dt>Department</dt>
+              <dd>[Department Name]</dd>
+            </div>
+            <div>
+              <dt>University</dt>
+              <dd>[University Name]</dd>
+            </div>
+          </dl>
+
+          <p class="small-note">
+            Prospective students: include your CV, research interests, relevant
+            coursework or projects, and the degree program you are applying to.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="current-year"></span> Dr. Your Name</p>
+      <p>Built for GitHub Pages · Last updated July 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
