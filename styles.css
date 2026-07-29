@@ -65,8 +65,8 @@ img { max-width: 100%; display: block; }
 .hero-grid {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(300px, 365px) minmax(0, 1fr);
-  gap: clamp(46px, 7vw, 88px);
+  grid-template-columns: minmax(270px, 315px) minmax(0, 1fr);
+  gap: clamp(42px, 6vw, 76px);
   align-items: start;
 }
 
@@ -143,37 +143,37 @@ h1 {
 
 .profile-card {
   width: 100%;
-  max-width: 365px;
+  max-width: 315px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(216, 224, 228, 0.98);
-  border-radius: 20px;
-  box-shadow: 0 18px 45px rgba(11, 45, 69, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 16px 38px rgba(11, 45, 69, 0.09);
 }
 
 .profile-card img {
   width: 100%;
-  height: 245px;
+  height: 175px;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center 25%;
 }
 
 .profile-content {
-  padding: 22px;
+  padding: 18px;
 }
 
 .profile-content h2 {
-  margin: 0 0 5px;
+  margin: 0 0 4px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.42rem;
+  font-size: 1.22rem;
   font-weight: 600;
 }
 
 .profile-content p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.55;
+  font-size: 0.83rem;
+  line-height: 1.48;
 }
 
 .profile-content dl {
@@ -229,31 +229,25 @@ h1 {
 }
 
 .faculty-bio {
-  max-width: 720px;
-  padding: 20px 0 0;
+  max-width: 730px;
+  padding: 18px 0 0;
 }
 
 .faculty-bio .bio-lead {
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   color: #263e4e;
-  font-size: clamp(1.18rem, 2vw, 1.42rem);
-  line-height: 1.58;
+  font-size: clamp(1.28rem, 2.2vw, 1.62rem);
+  line-height: 1.55;
 }
 
 .faculty-bio > p:not(.section-label):not(.bio-lead) {
   max-width: 700px;
-  margin: 0 0 17px;
+  margin: 0 0 18px;
   color: var(--muted);
-  font-size: 1.02rem;
-  line-height: 1.75;
+  font-size: 1.03rem;
+  line-height: 1.78;
 }
 
-.bio-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 11px;
-  margin-top: 27px;
-}
 
 dt { color: var(--muted); font-size: .73rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
 dd { margin: 0; }
@@ -308,7 +302,7 @@ footer { padding: 26px 0; background: #08263b; color: rgba(255,255,255,.72); }
 .footer-inner { display: flex; justify-content: space-between; gap: 24px; }
 .footer-inner p { margin: 0; font-size: .86rem; }
 
-@media (max-width: 860px) {
+@media (max-width: 720px) {
   .menu-button { display: block; }
   .nav { position: relative; }
   .nav-links { position: absolute; top: calc(100% + 1px); left: -20px; right: -20px; display: none; padding: 12px 20px 18px; background: var(--paper); border-bottom: 1px solid var(--line); box-shadow: 0 16px 30px rgba(11,45,69,.08); }
@@ -316,7 +310,7 @@ footer { padding: 26px 0; background: #08263b; color: rgba(255,255,255,.72); }
   .nav-links a { padding: 10px 4px; }
   .hero { padding: 48px 0; }
   .hero-grid, .contact-grid { grid-template-columns: 1fr; }
-  .profile-card { max-width: 430px; }
+  .profile-card { max-width: 315px; }
   .faculty-bio { max-width: 760px; padding-top: 0; }
   .research-grid, .teaching-grid { grid-template-columns: 1fr; }
 }
@@ -327,7 +321,7 @@ footer { padding: 26px 0; background: #08263b; color: rgba(255,255,255,.72); }
   .hero { padding: 40px 0; }
   h1 { font-size: 2.25rem; }
   .profile-card { max-width: 100%; }
-  .profile-card img { height: 225px; }
+  .profile-card img { height: 175px; }
   .academic-links { grid-template-columns: 1fr 1fr; }
   .research-card, .teaching-grid article, .contact-card { padding: 23px; }
   .publication, .timeline article { grid-template-columns: 1fr; gap: 8px; }
@@ -544,5 +538,49 @@ footer { padding: 26px 0; background: #08263b; color: rgba(255,255,255,.72); }
 
   .person-placeholder {
     min-height: 150px;
+  }
+}
+
+
+/* Simplified single-heading layout */
+.nav {
+  min-height: 60px;
+  justify-content: flex-end;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section h2 {
+  margin: 0 0 32px;
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.course-list {
+  max-width: 720px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.course-list li {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+#news .timeline {
+  margin-top: 0;
+}
+
+@media (max-width: 850px) {
+  .nav {
+    justify-content: flex-end;
   }
 }
