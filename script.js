@@ -1,19 +1,19 @@
-const button = document.querySelector('.menu-button');
-const links = document.querySelector('#nav-links');
-const year = document.querySelector('#year');
+const menuButton = document.querySelector('.menu-button');
+const navLinks = document.querySelector('.nav-links');
+const year = document.querySelector('[data-current-year]');
 
 if (year) year.textContent = new Date().getFullYear();
 
-if (button && links) {
-  button.addEventListener('click', () => {
-    const open = links.classList.toggle('open');
-    button.setAttribute('aria-expanded', String(open));
+if (menuButton && navLinks) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
   });
 
-  links.querySelectorAll('a').forEach((link) => {
+  navLinks.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      links.classList.remove('open');
-      button.setAttribute('aria-expanded', 'false');
+      navLinks.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
     });
   });
 }

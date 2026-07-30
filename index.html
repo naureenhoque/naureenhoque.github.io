@@ -1,223 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Academic website of Naureen Hoque, Ph.D., Assistant Professor at Grand Valley State University.">
   <title>Naureen Hoque, Ph.D.</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
-    <nav class="nav shell" aria-label="Primary navigation">
-<button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      <div class="nav-links" id="nav-links">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#news">News</a>
-        <a href="lab.html" target="_blank" rel="noopener noreferrer">Lab ↗</a>
-      </div>
-    </nav>
+    <div class="shell header-inner">
+      <a class="site-name" href="index.html">Naureen Hoque, Ph.D.<small>Grand Valley State University</small></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="service.html">Service</a>
+        <a href="team.html">Team</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="home">
+    <section class="hero">
       <div class="shell hero-grid">
-        <aside class="profile-card" aria-label="Faculty profile">
-          <img src="profile.jpg" alt="Portrait of Naureen Hoque, Ph.D.">
-          <div class="profile-content">
-            <h2>Naureen Hoque, Ph.D.</h2>
-            <p>Assistant Professor</p>
-            <p>Department of Information Science &amp; Technologies</p>
+        <div>
+          <img class="portrait" src="profile.jpg" alt="Portrait of Naureen Hoque">
+          <div class="profile-caption">
+            <p><strong>Assistant Professor</strong></p>
             <p>College of Computing</p>
             <p>Grand Valley State University</p>
-
-            <dl>
-              <div>
-                <dt>Email</dt>
-                <dd><a href="mailto:hoquen@gvsu.edu">hoquen@gvsu.edu</a></dd>
-              </div>
-              <div>
-                <dt>Phone</dt>
-                <dd><a href="tel:+16163317738">616-331-7738</a></dd>
-              </div>
-              <div>
-                <dt>Office</dt>
-                <dd>DCIH 530M</dd>
-              </div>
-            </dl>
-
-            <nav class="academic-links" aria-label="Academic and professional profiles">
-              <a href="https://scholar.google.com/citations?hl=en&amp;user=wmNvIxQAAAAJ"
-                 target="_blank" rel="noopener noreferrer">Google Scholar</a>
-              <a href="https://www.linkedin.com/pub/dir/Naureen/Hoque"
-                 target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://orcid.org/0000-0001-6965-7017"
-                 target="_blank" rel="noopener noreferrer">ORCID</a>
-              <a href="https://github.com/naureenhoque"
-                 target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.gvsu.edu/computing/hoque-naureen-193"
-                 target="_blank" rel="noopener noreferrer">GVSU Profile</a>
-            </nav>
+            <p>Grand Rapids, Michigan</p>
           </div>
-        </aside>
-
-        <div class="faculty-bio">
-          <p class="bio-lead">
-            I am <strong>Naureen Hoque, Ph.D.</strong>, an Assistant Professor in
-            the Department of Information Science &amp; Technologies in the College
-            of Computing at Grand Valley State University.
-          </p>
-
-          <p>
-            I earned my Ph.D. in Computing and Information Sciences from Rochester
-            Institute of Technology in 2025 and my M.S. in Computer Science from
-            the University of Nebraska–Lincoln in 2018.
-          </p>
-
-          <p>
-            My research focuses on wireless communications, cybersecurity,
-            artificial intelligence, and quantum-resistant systems, with particular
-            interests in moving target defense, cyber deception, and adversarial
-            machine learning for securing wireless networks.
-          </p>
+        </div>
+        <div class="hero-copy">
+          <h1>Naureen Hoque, Ph.D.</h1>
+          <p class="position">Cybersecurity · Wireless Systems · Artificial Intelligence</p>
+          <p class="lead">I develop adaptive defenses for wireless and intelligent systems, combining systematic security analysis with machine learning and hands-on experimentation.</p>
+          <p>My research examines exposed attack surfaces in Wi-Fi and next-generation wireless systems, moving-target and deception-based defenses, adversarial machine learning, and practical security evaluation using real systems and software-defined radios.</p>
+          <p>I joined the College of Computing at Grand Valley State University in 2025 after completing my Ph.D. in Computing and Information Sciences at Rochester Institute of Technology.</p>
+          <div class="link-row" aria-label="Professional links">
+            <a href="mailto:hoquen@gvsu.edu">Email</a>
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=wmNvIxQAAAAJ">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/naureenhoque/">LinkedIn</a>
+            <a href="https://orcid.org/0000-0001-6965-7017">ORCID</a>
+            <a href="https://github.com/naureenhoque">GitHub</a>
+            <a href="https://www.gvsu.edu/computing/hoque-naureen-193">GVSU Profile</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section tinted" id="research">
+    <section class="section soft">
       <div class="shell">
-        <h2>Research</h2>
-
-        <div class="research-grid">
-          <article class="research-card">
-            <span>01</span>
-            <h3>Wireless &amp; NextG Security</h3>
-            <p>Security analysis and defense for Wi-Fi, wireless communications, connected devices, and next-generation networks.</p>
-            <ul><li>Wi-Fi security</li><li>Protocol vulnerabilities</li><li>NextG networks</li></ul>
-          </article>
-          <article class="research-card">
-            <span>02</span>
-            <h3>AI-Powered Cyber Defense</h3>
-            <p>Machine learning and deep learning methods that detect attacks and dynamically change the defender’s attack surface.</p>
-            <ul><li>Moving target defense</li><li>Cyber deception</li><li>Threat detection</li></ul>
-          </article>
-          <article class="research-card">
-            <span>03</span>
-            <h3>Adversarial Machine Learning</h3>
-            <p>Understanding and countering attacks against learning-enabled wireless and security systems.</p>
-            <ul><li>Model robustness</li><li>Modulation classification</li><li>Adaptive attackers</li></ul>
-          </article>
-          <article class="research-card">
-            <span>04</span>
-            <h3>Quantum-Resistant Systems</h3>
-            <p>Secure communication mechanisms and migration strategies designed for classical and quantum-era threats.</p>
-            <ul><li>Post-quantum security</li><li>Applied cryptography</li><li>Secure communications</li></ul>
-          </article>
-        </div>
-</div>
-    </section>
-
-    <section class="section" id="publications">
-      <div class="shell">
-        <h2>Publications</h2>
-
-        <div class="publication-list">
-          <article class="publication">
-            <div class="year">2025</div>
-            <div>
-              <p class="venue">IEEE Transactions on Dependable and Secure Computing</p>
-              <h3>Locking Down Relay and Spoofing Attacks During Concurrent Connection Establishments in 802.11ax</h3>
-              <p>Naureen Hoque and Hanif Rahbari</p>
-              <a href="https://arxiv.org/abs/2501.01517">Preprint</a>
-            </div>
-          </article>
-          <article class="publication">
-            <div class="year">2024</div>
-            <div>
-              <p class="venue">IEEE INFOCOM</p>
-              <h3>Deep Learning Models as Moving Targets to Counter Modulation Classification Attacks</h3>
-              <p>Naureen Hoque and Hanif Rahbari</p>
-            </div>
-          </article>
-          <article class="publication">
-            <div class="year">2023</div>
-            <div>
-              <p class="venue">ACM WiSec</p>
-              <h3>Countering Relay and Spoofing Attacks in the Connection Establishment Phase of Wi-Fi Systems</h3>
-              <p>Naureen Hoque and Hanif Rahbari</p>
-            </div>
-          </article>
-          <article class="publication">
-            <div class="year">2023</div>
-            <div>
-              <p class="venue">ACM WiSec</p>
-              <h3>Circumventing the Defense against Modulation Classification Attacks</h3>
-              <p>Naureen Hoque and Hanif Rahbari</p>
-            </div>
-          </article>
-          <article class="publication">
-            <div class="year">2022</div>
-            <div>
-              <p class="venue">IEEE CNS</p>
-              <h3>Systematically Analyzing Vulnerabilities in the Connection Establishment Phase of Wi-Fi Systems</h3>
-              <p>Naureen Hoque, Hanif Rahbari, and Cullen Rezendes</p>
-            </div>
-          </article>
-          <article class="publication">
-            <div class="year">2020</div>
-            <div>
-              <p class="venue">Photonic Network Communications</p>
-              <h3>Dynamic Wavelength and Bandwidth Allocation for Supporting Diverse Customers and Prioritized Traffic in NG-PON2 Networks</h3>
-              <p>Naureen Hoque and B. Ramamurthy</p>
-            </div>
-          </article>
-          <article class="publication">
-            <div class="year">2019</div>
-            <div>
-              <p class="venue">ONDM</p>
-              <h3>Supporting Diverse Customer Base and Traffic Types in NG-PON2</h3>
-              <p>Naureen Hoque and B. Ramamurthy</p>
-            </div>
-          </article>
+        <h2>Research interests</h2>
+        <p class="section-intro">Security for wireless, connected, and learning-enabled systems, with an emphasis on defenses that adapt as quickly as the threat landscape.</p>
+        <div class="two-column">
+          <article class="topic"><h3>Wireless and NextG security</h3><p>Systematic analysis and defense of Wi-Fi connection establishment, wireless protocols, connected vehicles, and emerging communication systems.</p></article>
+          <article class="topic"><h3>Adaptive cyber defense</h3><p>Moving-target defense and cyber deception techniques that continually change the defender's exposed attack surface.</p></article>
+          <article class="topic"><h3>Adversarial machine learning</h3><p>Understanding attacks on learning-enabled wireless systems and developing robust models for security-sensitive environments.</p></article>
+          <article class="topic"><h3>Experimental security</h3><p>Reproducible datasets, open-source testbeds, software-defined radios, and practical evaluation of security mechanisms.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section tinted" id="teaching">
+    <section class="section">
       <div class="shell">
-        <h2>Teaching</h2>
-        <ul class="course-list">
-          <li>Cybersecurity</li>
-          <li>Machine Learning</li>
-          <li>Data Security</li>
-          <li>Computer Networking</li>
+        <h2>Recent and upcoming</h2>
+        <ul class="news-list">
+          <li><time datetime="2026-09">Sep. 2026</time><div><h3>AI and Cybersecurity in a Wireless World</h3><p>Scheduled presentation for Tech Week: Connecting Research and Industry to Fuel Tech Growth in Grand Rapids.</p></div></li>
+          <li><time datetime="2025">2025</time><div><h3>Joined Grand Valley State University</h3><p>Started as an Assistant Professor in the College of Computing.</p></div></li>
+          <li><time datetime="2025">2025</time><div><h3>IEEE TDSC publication</h3><p>Published work on protecting concurrent 802.11ax connection establishments from relay and spoofing attacks.</p></div></li>
+          <li><time datetime="2024">2024</time><div><h3>IEEE INFOCOM</h3><p>Presented a moving-target defense using deep-learning models to counter modulation-classification attacks.</p></div></li>
         </ul>
       </div>
     </section>
+  </main>
 
-    <section class="section" id="news">
-      <div class="shell">
-        <h2>News</h2>
-        <div class="timeline">
-          <article><time>2025</time><div><h3>Joined Grand Valley State University</h3><p>Joined the College of Computing as a tenure-track Assistant Professor.</p></div></article>
-          <article><time>2025</time><div><h3>Completed Ph.D. at RIT</h3><p>Defended a dissertation on dynamic defenses for exposed attack surfaces in wireless systems.</p></div></article>
-          <article><time>2025</time><div><h3>IEEE TDSC publication</h3><p>Published work on securing concurrent Wi-Fi 6 connection establishments against relay and spoofing attacks.</p></div></article>
-          <article><time>2024</time><div><h3>Presented at IEEE INFOCOM</h3><p>Presented a moving-target defense framework for countering modulation classification attacks.</p></div></article>
-        </div>
-      </div>
-    </section>
-</main>
-
-  <footer>
-    <div class="shell footer-inner">
-      <p>© <span id="year"></span> Naureen Hoque, Ph.D.</p>
-      <p>Academic website · Hosted with GitHub Pages</p>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="shell footer-inner"><span>© <span data-current-year></span> Naureen Hoque</span><span>Academic website hosted with GitHub Pages</span></div></footer>
 </body>
 </html>
