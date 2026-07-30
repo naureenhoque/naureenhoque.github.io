@@ -316,6 +316,14 @@ img {
   margin-top: 3.2rem;
 }
 
+.main-column section > h2 {
+  margin-bottom: 1rem;
+}
+
+.main-column h3 {
+  font-size: 1.02rem;
+}
+
 .aside {
   position: sticky;
   top: 1.5rem;
@@ -440,30 +448,22 @@ img {
 }
 
 /* Teaching page */
-.teaching-page .main-column > section + section {
-  margin-top: 2rem;
-}
-
 .teaching-page .main-column section > h2 {
-  margin: 0 0 0.05rem;
+  margin: 0 0 0.2rem;
   color: var(--accent-dark);
   font-size: 1.18rem;
   line-height: 1.25;
 }
 
 .teaching-page .institution-location {
-  margin: 0 0 0.6rem;
+  margin: 0 0 1rem;
   color: var(--muted);
   font-size: 0.92rem;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .teaching-page .course-group {
-  margin: 0 0 0.9rem;
-}
-
-.teaching-page .course-group + .course-group {
-  margin-top: 0.8rem;
+  margin: 0 0 1.25rem;
 }
 
 .teaching-page .course-group:last-child {
@@ -471,7 +471,7 @@ img {
 }
 
 .teaching-page .course-group h3 {
-  margin: 0 0 0.15rem;
+  margin: 0 0 0.4rem;
   font-size: 1.08rem;
   line-height: 1.3;
 }
@@ -489,7 +489,7 @@ img {
   margin: 0;
   padding: 0.12rem 0;
   border: 0;
-  line-height: 1.34;
+  line-height: 1.4;
 }
 
 .teaching-page .course-list li > span:last-child:not(:only-child) {
@@ -608,14 +608,6 @@ img {
 
 .home-hero .link-row a {
   font-weight: 600;
-}
-
-.main-column section > h2 {
-  margin-bottom: 1rem;
-}
-
-.main-column h3 {
-  font-size: 1.02rem;
 }
 
 /* Service page */
@@ -817,10 +809,6 @@ img {
   .course-list li {
     grid-template-columns: 1fr;
     gap: 0.15rem;
-  }
-
-  .teaching-page .course-list li {
-    padding: 0.15rem 0;
   }
 
   .teaching-page .course-list li > span:last-child:not(:only-child) {
