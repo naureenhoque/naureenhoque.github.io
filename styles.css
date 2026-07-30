@@ -40,8 +40,6 @@ img {
   max-width: 100%;
 }
 
-/* Accessibility */
-
 .skip-link {
   position: fixed;
   top: 0.75rem;
@@ -57,14 +55,10 @@ img {
   transform: translateY(0);
 }
 
-/* Shared page width */
-
 .shell {
   width: min(calc(100% - 2.5rem), var(--max));
   margin-inline: auto;
 }
-
-/* Header */
 
 .site-header {
   border-bottom: 1px solid var(--line);
@@ -102,8 +96,6 @@ img {
   margin-top: 0.05rem;
 }
 
-/* Navigation */
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -135,8 +127,6 @@ img {
   cursor: pointer;
 }
 
-/* Internal page titles */
-
 .page-title {
   padding: 2.1rem 0 1.45rem;
   border-bottom: 1px solid var(--line);
@@ -150,6 +140,7 @@ img {
   font-weight: 700;
 }
 
+/* Same title size for every internal HTML page. */
 .page-title h1 {
   margin: 0;
   font-size: clamp(1.55rem, 2.3vw, 1.95rem);
@@ -161,8 +152,6 @@ img {
   margin: 0;
   color: var(--muted);
 }
-
-/* Homepage hero */
 
 .hero {
   padding: 3.25rem 0 3.5rem;
@@ -236,8 +225,6 @@ img {
   font-weight: 700;
 }
 
-/* General sections */
-
 .section {
   padding: 3.5rem 0;
   border-top: 1px solid var(--line);
@@ -281,8 +268,6 @@ img {
   color: var(--muted);
 }
 
-/* News and simple lists */
-
 .news-list,
 .simple-list {
   margin: 0;
@@ -317,8 +302,6 @@ img {
   color: var(--muted);
 }
 
-/* Internal page content */
-
 .content {
   padding: 2.35rem 0 4rem;
 }
@@ -333,8 +316,6 @@ img {
 .main-column > section + section {
   margin-top: 3.2rem;
 }
-
-/* Sidebar */
 
 .aside {
   position: sticky;
@@ -361,8 +342,6 @@ img {
   margin-top: 0.45rem;
 }
 
-/* Detail lists */
-
 .detail-list {
   margin: 0;
 }
@@ -388,8 +367,7 @@ img {
   color: var(--muted);
 }
 
-/* Publications */
-
+/* Publications: compact entries, no title underlines, and one line only after a year ends. */
 .publication-list {
   margin: 0;
   padding: 0;
@@ -400,18 +378,22 @@ img {
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr);
   gap: 1rem;
-  padding: 0.35rem 0;
+  margin: 0;
+  padding: 0.28rem 0;
   border: 0;
 }
 
-/* A line appears only after the final entry of each year. */
 .publication-list > li.year-end {
   border-bottom: 1px solid var(--line);
 }
 
+.publication-list > li.year-end:last-child {
+  border-bottom: 0;
+}
+
 .publication-entry {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .publication-entry strong {
@@ -419,16 +401,18 @@ img {
   font-weight: 700;
 }
 
-/* Publication-title links have no text underline. */
-.publication-entry a {
+.publication-entry a,
+.publication-entry a:visited,
+.publication-entry a:hover,
+.publication-entry a:focus {
   color: var(--accent-dark);
+  border-bottom: 0;
   text-decoration: none;
 }
 
 .publication-entry a:hover,
 .publication-entry a:focus {
   color: var(--accent);
-  text-decoration: none;
 }
 
 .pub-year {
@@ -456,8 +440,7 @@ img {
   font-weight: 700;
 }
 
-/* Teaching page */
-
+/* Teaching page: compact course spacing and no lines between courses. */
 .course-group {
   margin-bottom: 1.45rem;
 }
@@ -478,8 +461,7 @@ img {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.75rem;
   padding: 0.35rem 0;
-  border-top: 0;
-  border-bottom: 0;
+  border: 0;
 }
 
 .course-list li > span:last-child:not(:only-child) {
@@ -490,8 +472,6 @@ img {
 .course-list li > span:only-child {
   color: var(--ink);
 }
-
-/* Tables */
 
 .compact-table {
   width: 100%;
@@ -516,8 +496,6 @@ img {
   color: var(--muted);
 }
 
-/* Callout */
-
 .callout {
   padding: 1.35rem 1.5rem;
   border-left: 4px solid var(--accent);
@@ -532,16 +510,12 @@ img {
   margin-bottom: 0;
 }
 
-/* CV frame */
-
 .cv-frame {
   width: 100%;
   min-height: 820px;
   border: 1px solid var(--line);
   background: var(--soft);
 }
-
-/* Buttons */
 
 .button-link {
   display: inline-block;
@@ -557,8 +531,6 @@ img {
   background: var(--accent-dark);
 }
 
-/* Footer */
-
 .site-footer {
   padding: 2rem 0;
   border-top: 1px solid var(--line);
@@ -571,8 +543,6 @@ img {
   justify-content: space-between;
   gap: 1rem;
 }
-
-/* Homepage-specific refinements */
 
 .home-hero {
   min-height: calc(100vh - 170px);
@@ -609,8 +579,6 @@ img {
   font-weight: 600;
 }
 
-/* Internal-page heading refinements */
-
 .main-column section > h2 {
   margin-bottom: 1rem;
 }
@@ -618,8 +586,6 @@ img {
 .main-column h3 {
   font-size: 1.02rem;
 }
-
-/* Teaching institution headings and locations */
 
 .teaching-page .main-column section > h2 {
   margin-bottom: 0.05rem;
@@ -636,8 +602,6 @@ img {
   color: var(--muted);
   font-size: 0.92rem;
 }
-
-/* Service page */
 
 .service-group + .service-group {
   margin-top: 2rem;
@@ -677,8 +641,6 @@ img {
 .service-page-view .service-page > section > h2 {
   font-size: clamp(1.2rem, 1.8vw, 1.45rem);
 }
-
-/* Tablet and mobile navigation */
 
 @media (max-width: 820px) {
   .header-inner {
@@ -735,8 +697,6 @@ img {
     position: static;
   }
 }
-
-/* Small mobile screens */
 
 @media (max-width: 560px) {
   .shell {
