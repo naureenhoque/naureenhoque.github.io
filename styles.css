@@ -97,7 +97,7 @@ img { display: block; max-width: 100%; }
 }
 
 .page-title {
-  padding: 3.2rem 0 2.1rem;
+  padding: 2.1rem 0 1.45rem;
   border-bottom: 1px solid var(--line);
 }
 .page-title h1,
@@ -109,12 +109,12 @@ img { display: block; max-width: 100%; }
 }
 .page-title h1 {
   margin: 0 0 0.6rem;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.7rem, 2.8vw, 2.2rem);
   line-height: 1.12;
 }
 .page-title p { max-width: 760px; margin: 0; color: var(--muted); }
 
-.hero { padding: 4rem 0 3.6rem; }
+.hero { padding: 3.25rem 0 3.5rem; }
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
@@ -132,8 +132,8 @@ img { display: block; max-width: 100%; }
 .profile-caption p { margin: 0.1rem 0; color: var(--muted); font-size: 0.92rem; }
 .profile-caption strong { color: var(--ink); }
 .hero h1 {
-  margin: -0.25rem 0 0.75rem;
-  font-size: clamp(2.25rem, 5vw, 4rem);
+  margin: -0.15rem 0 1.2rem;
+  font-size: clamp(2.15rem, 4vw, 3.15rem);
   line-height: 1.04;
 }
 .hero .position {
@@ -147,7 +147,7 @@ img { display: block; max-width: 100%; }
   margin: 0 0 1.25rem;
   color: #30363a;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.18rem, 2.2vw, 1.48rem);
+  font-size: clamp(1.05rem, 1.7vw, 1.22rem);
   line-height: 1.55;
 }
 .hero-copy p:not(.position):not(.lead) { max-width: 730px; color: var(--muted); }
@@ -164,7 +164,7 @@ img { display: block; max-width: 100%; }
 .section h2,
 .content h2 {
   margin: 0 0 1.3rem;
-  font-size: clamp(1.65rem, 3vw, 2.2rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
   line-height: 1.2;
 }
 .section-intro { max-width: 760px; margin: -0.65rem 0 1.8rem; color: var(--muted); }
@@ -191,7 +191,7 @@ img { display: block; max-width: 100%; }
 .news-list h3 { margin: 0 0 0.2rem; font-size: 1rem; }
 .news-list p { margin: 0; color: var(--muted); }
 
-.content { padding: 3rem 0 4.5rem; }
+.content { padding: 2.35rem 0 4rem; }
 .content-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 250px;
@@ -311,4 +311,34 @@ img { display: block; max-width: 100%; }
   .course-list span:last-child { white-space: normal; }
   .footer-inner { display: block; }
   .cv-frame { min-height: 620px; }
+}
+
+
+/* Homepage-specific refinements */
+.home-hero { min-height: calc(100vh - 170px); }
+.home-hero .hero-grid { align-items: start; }
+.home-hero .hero-copy { padding-top: 0.2rem; }
+.about-text {
+  max-width: 760px;
+  margin: 0;
+  color: #3f474d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.08rem, 1.8vw, 1.3rem);
+  line-height: 1.75;
+}
+.profile-email {
+  margin-top: 0.8rem !important;
+  color: var(--ink) !important;
+  font-weight: 700;
+}
+.home-hero .link-row { margin-top: 1.5rem; }
+.home-hero .link-row a { font-weight: 600; }
+
+/* Keep headings on internal pages modest and easy to scan. */
+.main-column section > h2 { margin-bottom: 1rem; }
+.main-column h3 { font-size: 1.02rem; }
+
+@media (max-width: 560px) {
+  .hero h1 { font-size: 2.2rem; }
+  .home-hero { min-height: auto; }
 }
