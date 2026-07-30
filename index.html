@@ -1,20 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Academic website of Naureen Hoque, Ph.D., Assistant Professor at Grand Valley State University.">
-  <title>Naureen Hoque, Ph.D.</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Naureen Hoque is an Assistant Professor at Grand Valley State University researching wireless security, cybersecurity, and trustworthy artificial intelligence."
+  />
+
+  <title>Naureen Hoque</title>
+
+  <link href="styles.css" rel="stylesheet" />
   <script defer src="script.js"></script>
 </head>
-<body>
+
+<body class="home-page">
   <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="site-name" href="index.html">Naureen Hoque, Ph.D.<small>Assistant Professor</small><small>Grand Valley State University</small></a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+      <a class="site-name" href="index.html">
+        Naureen Hoque, Ph.D.
+        <small>Assistant Professor</small>
+        <small>Grand Valley State University</small>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+
+      <nav
+        id="primary-nav"
+        class="nav-links"
+        aria-label="Primary navigation"
+      >
         <a href="index.html" aria-current="page">Home</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
@@ -28,8 +53,15 @@
   <main id="main">
     <section class="hero home-hero">
       <div class="shell hero-grid">
+
+        <!-- Left column: keep current photograph size and placement -->
         <div class="profile-column">
-          <img class="portrait" src="profile.jpg" alt="Portrait of Naureen Hoque">
+          <img
+            class="portrait"
+            src="profile.jpg"
+            alt="Portrait of Naureen Hoque"
+          />
+
           <div class="profile-caption">
             <p><strong>Assistant Professor</strong></p>
             <p>College of Computing</p>
@@ -38,21 +70,130 @@
             <p class="profile-email">hoquen [AT] gvsu.edu</p>
           </div>
         </div>
-        <div class="hero-copy">
+
+        <!-- Right column: structured professional information -->
+        <div class="hero-copy homepage-details">
           <h1>Naureen Hoque, Ph.D.</h1>
-          <p class="about-text">I am an Assistant Professor in the College of Computing at Grand Valley State University. I earned my Ph.D. in Computing and Information Sciences from Rochester Institute of Technology and my M.S. in Computer Science, with distinction, from the University of Nebraska–Lincoln. My research interests include wireless and next-generation network security, adaptive and deception-based cyber defense, adversarial machine learning, and experimental security using real systems, open-source testbeds, and software-defined radios.</p>
-          <div class="link-row" aria-label="Professional profiles">
-            <a href="https://scholar.google.com/citations?hl=en&amp;user=wmNvIxQAAAAJ">Google Scholar</a>
-            <a href="https://www.linkedin.com/in/naureenhoque/">LinkedIn</a>
-            <a href="https://orcid.org/0000-0001-6965-7017">ORCID</a>
-            <a href="https://github.com/naureenhoque">GitHub</a>
-            <a href="https://www.gvsu.edu/computing/hoque-naureen-193">GVSU Profile</a>
+
+          <div class="homepage-position">
+            <p>Assistant Professor</p>
+            <p>
+              <a
+                href="https://www.gvsu.edu/computing/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                College of Computing
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://www.gvsu.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Grand Valley State University
+              </a>
+            </p>
           </div>
+
+          <section class="homepage-info-block">
+            <h2>Contact</h2>
+
+            <p>
+              <strong>Email:</strong>
+              hoquen [AT] gvsu.edu
+            </p>
+
+            <p>
+              <strong>Location:</strong>
+              Grand Rapids, Michigan
+            </p>
+
+            <p>
+              <strong>Profiles:</strong>
+              <a
+                href="https://www.linkedin.com/in/naureenhoque/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              ·
+              <a
+                href="https://github.com/hoquenaureen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </p>
+          </section>
+
+          <section class="homepage-info-block">
+            <h2>Education</h2>
+
+            <p>
+              <strong>Ph.D. in Computing and Information Sciences</strong><br />
+              Rochester Institute of Technology, 2025
+            </p>
+
+            <p>
+              <strong>M.S. in Computer Science</strong><br />
+              University of Nebraska–Lincoln
+            </p>
+          </section>
+
+          <section class="homepage-info-block">
+            <h2>Research interests</h2>
+
+            <ul>
+              <li>Wireless and mobile systems security</li>
+              <li>Wi-Fi and next-generation wireless security</li>
+              <li>Adversarial machine learning</li>
+              <li>Moving-target and deception-based defenses</li>
+              <li>Trustworthy artificial intelligence</li>
+              <li>Security experimentation with software-defined radios</li>
+            </ul>
+          </section>
+
+          <section class="homepage-info-block">
+            <h2>Selected prior appointments</h2>
+
+            <ul>
+              <li>
+                Graduate Cybersecurity Research Assistant,
+                Rochester Institute of Technology
+              </li>
+
+              <li>
+                Data Science Intern,
+                HireVue
+              </li>
+
+              <li>
+                Data Science Intern,
+                Modern Hire
+              </li>
+
+              <li>
+                Research Engineer,
+                Huawei Technologies
+              </li>
+            </ul>
+          </section>
         </div>
+
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-inner"><span>© <span data-current-year></span> Naureen Hoque</span></div></footer>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>
+        © <span data-current-year></span> Naureen Hoque
+      </span>
+    </div>
+  </footer>
 </body>
 </html>
