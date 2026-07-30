@@ -140,6 +140,7 @@ img {
   font-weight: 700;
 }
 
+/* Same title size for every internal HTML page. */
 .page-title h1 {
   margin: 0;
   font-size: clamp(1.55rem, 2.3vw, 1.95rem);
@@ -316,14 +317,6 @@ img {
   margin-top: 3.2rem;
 }
 
-.main-column section > h2 {
-  margin-bottom: 1rem;
-}
-
-.main-column h3 {
-  font-size: 1.02rem;
-}
-
 .aside {
   position: sticky;
   top: 1.5rem;
@@ -374,7 +367,7 @@ img {
   color: var(--muted);
 }
 
-/* Publications */
+/* Publications: compact entries, no title underlines, and one line only after a year ends. */
 .publication-list {
   margin: 0;
   padding: 0;
@@ -447,63 +440,39 @@ img {
   font-weight: 700;
 }
 
-/* Teaching page */
-.teaching-page .main-column section > h2 {
-  margin: 0 0 0.2rem;
-  color: var(--accent-dark);
-  font-size: 1.18rem;
-  line-height: 1.25;
+/* Teaching page: compact course spacing and no lines between courses. */
+.course-group {
+  margin-bottom: 1.45rem;
 }
 
-.teaching-page .institution-location {
-  margin: 0 0 1rem;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.4;
-}
-
-.teaching-page .course-group {
-  margin: 0 0 1.25rem;
-}
-
-.teaching-page .course-group:last-child {
-  margin-bottom: 0;
-}
-
-.teaching-page .course-group h3 {
-  margin: 0 0 0.4rem;
+.course-group h3 {
+  margin: 0 0 0.35rem;
   font-size: 1.08rem;
-  line-height: 1.3;
 }
 
-.teaching-page .course-list {
+.course-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.teaching-page .course-list li {
+.course-list li {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.75rem;
-  margin: 0;
-  padding: 0.12rem 0;
+  padding: 0.35rem 0;
   border: 0;
-  line-height: 1.4;
 }
 
-/* Semester and year: black and regular weight */
-.teaching-page .course-list li > span:last-child:not(:only-child) {
-  color: var(--ink);
-  font-weight: 400;
+.course-list li > span:last-child:not(:only-child) {
+  color: var(--muted);
   white-space: nowrap;
 }
 
-.teaching-page .course-list li > span:only-child {
+.course-list li > span:only-child {
   color: var(--ink);
 }
 
-/* Tables */
 .compact-table {
   width: 100%;
   border-collapse: collapse;
@@ -575,7 +544,6 @@ img {
   gap: 1rem;
 }
 
-/* Homepage */
 .home-hero {
   min-height: calc(100vh - 170px);
 }
@@ -611,7 +579,30 @@ img {
   font-weight: 600;
 }
 
-/* Service page */
+.main-column section > h2 {
+  margin-bottom: 1rem;
+}
+
+.main-column h3 {
+  font-size: 1.02rem;
+}
+
+.teaching-page .main-column section > h2 {
+  margin-bottom: 0.05rem;
+  font-size: 1.18rem;
+  line-height: 1.3;
+}
+
+.teaching-page .main-column > section + section {
+  margin-top: 2.6rem;
+}
+
+.institution-location {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .service-group + .service-group {
   margin-top: 2rem;
 }
@@ -649,82 +640,6 @@ img {
 
 .service-page-view .service-page > section > h2 {
   font-size: clamp(1.2rem, 1.8vw, 1.45rem);
-}
-
-/* Compact homepage profile layout */
-.home-page .profile-caption {
-  display: none;
-}
-
-.home-page .home-hero {
-  min-height: auto;
-  padding: 2.35rem 0 3rem;
-}
-
-.home-page .hero-copy {
-  padding-top: 0;
-}
-
-.home-page .hero h1 {
-  margin: 0 0 0.7rem;
-  font-size: clamp(2rem, 3.2vw, 2.65rem);
-  line-height: 1.06;
-}
-
-.home-page .homepage-position {
-  margin: 0 0 0.9rem;
-}
-
-.home-page .homepage-position p {
-  margin: 0.05rem 0;
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  line-height: 1.3;
-}
-
-.home-page .homepage-position p:first-child {
-  font-weight: 700;
-}
-
-.home-page .homepage-info-block {
-  margin-top: 0.9rem;
-}
-
-.home-page .homepage-info-block h2 {
-  margin: 0 0 0.2rem;
-  color: var(--accent-dark);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.04rem;
-  line-height: 1.25;
-}
-
-.home-page .homepage-info-block p {
-  margin: 0.12rem 0;
-  color: var(--ink);
-  font-size: 0.98rem;
-  line-height: 1.38;
-}
-
-.home-page .homepage-info-block ul {
-  margin: 0.15rem 0 0;
-  padding-left: 1.15rem;
-}
-
-.home-page .homepage-info-block li {
-  margin: 0.04rem 0;
-  font-size: 0.98rem;
-  line-height: 1.35;
-}
-
-.home-page .homepage-info-block a,
-.home-page .homepage-position a {
-  color: var(--accent-dark);
-}
-
-.home-page .homepage-info-block a:hover,
-.home-page .homepage-position a:hover {
-  color: var(--accent);
 }
 
 @media (max-width: 820px) {
@@ -812,7 +727,7 @@ img {
     gap: 0.15rem;
   }
 
-  .teaching-page .course-list li > span:last-child:not(:only-child) {
+  .course-list li > span:last-child:not(:only-child) {
     white-space: normal;
   }
 
@@ -822,9 +737,5 @@ img {
 
   .cv-frame {
     min-height: 620px;
-  }
-
-  .home-page .hero h1 {
-    font-size: 2rem;
   }
 }
