@@ -492,9 +492,10 @@ img {
   line-height: 1.4;
 }
 
+/* Semester and year: black and regular weight */
 .teaching-page .course-list li > span:last-child:not(:only-child) {
-  color: var(--accent-dark);
-  font-weight: 600;
+  color: var(--ink);
+  font-weight: 400;
   white-space: nowrap;
 }
 
