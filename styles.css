@@ -68,6 +68,8 @@ img { display: block; max-width: 100%; }
   font-weight: 400;
   letter-spacing: 0.02em;
 }
+.site-name small + small { margin-top: 0.05rem; }
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -282,7 +284,9 @@ img { display: block; max-width: 100%; }
 @media (max-width: 820px) {
   .header-inner { min-height: 72px; align-items: center; }
   .menu-button { display: inline-block; }
-  .nav-links {
+  .site-name small + small { margin-top: 0.05rem; }
+
+.nav-links {
     display: none;
     position: absolute;
     top: 72px;
