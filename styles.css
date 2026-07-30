@@ -360,7 +360,7 @@ img { display: block; max-width: 100%; }
   font-size: 0.92rem;
 }
 
-/* Service page: clean lists instead of dense punctuation-heavy outlines */
+/* Service page: simple, readable bullets with normal-weight item text. */
 .service-group + .service-group { margin-top: 2rem; }
 .service-page .service-group h3 {
   margin: 0 0 0.55rem;
@@ -369,46 +369,25 @@ img { display: block; max-width: 100%; }
 }
 .service-list {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  padding-left: 1.35rem;
+  list-style: disc;
 }
 .service-list li {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.2rem 1.25rem;
-  padding: 0.8rem 0;
-  border-top: 1px solid var(--line);
-}
-.service-list li:first-child { border-top: 0; }
-.service-list strong {
+  display: list-item;
+  padding: 0.22rem 0;
   color: var(--ink);
-  font-weight: 600;
-  line-height: 1.45;
+  border: 0;
+  font-weight: 400;
+  line-height: 1.55;
 }
-.service-list li > span:not(.service-year) {
-  grid-column: 1;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.45;
-}
+.service-list strong,
+.service-list span,
 .service-year {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  color: var(--muted);
-  font-size: 0.92rem;
-  white-space: nowrap;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  white-space: normal;
 }
-.membership-list li { grid-template-columns: 1fr; }
-
-@media (max-width: 560px) {
-  .service-list li { grid-template-columns: 1fr; gap: 0.2rem; }
-  .service-year {
-    grid-column: 1;
-    grid-row: auto;
-    white-space: normal;
-  }
-}
-
 
 /* Service page: slightly smaller titles for a more compact hierarchy. */
 .service-page-view .page-title h1 {
@@ -418,5 +397,6 @@ img { display: block; max-width: 100%; }
   font-size: clamp(1.2rem, 1.8vw, 1.45rem);
 }
 .service-page-view .service-group h3 {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  line-height: 1.35;
 }
