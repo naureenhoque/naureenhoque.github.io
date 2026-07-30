@@ -150,7 +150,6 @@ img {
   font-weight: 700;
 }
 
-/* Same title size for all internal pages */
 .page-title h1 {
   margin: 0;
   font-size: clamp(1.55rem, 2.3vw, 1.95rem);
@@ -285,7 +284,6 @@ img {
 /* News and simple lists */
 
 .news-list,
-.publication-list,
 .simple-list {
   margin: 0;
   padding: 0;
@@ -392,16 +390,45 @@ img {
 
 /* Publications */
 
+.publication-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .publication-list > li {
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr);
   gap: 1rem;
-  padding: 1.2rem 0;
-  border-top: 1px solid var(--line);
+  padding: 0.35rem 0;
+  border: 0;
 }
 
-.publication-list > li:first-child {
-  border-top: 0;
+/* A line appears only after the final entry of each year. */
+.publication-list > li.year-end {
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-entry {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.publication-entry strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* Publication-title links have no text underline. */
+.publication-entry a {
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
+.publication-entry a:hover,
+.publication-entry a:focus {
+  color: var(--accent);
+  text-decoration: none;
 }
 
 .pub-year {
@@ -455,13 +482,11 @@ img {
   border-bottom: 0;
 }
 
-/* Semester labels remain gray */
 .course-list li > span:last-child:not(:only-child) {
   color: var(--muted);
   white-space: nowrap;
 }
 
-/* Courses without semester labels remain dark */
 .course-list li > span:only-child {
   color: var(--ink);
 }
