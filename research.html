@@ -1,34 +1,333 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Research by Naureen Hoque in wireless security, adaptive cyber defense, and adversarial machine learning." name="description"/>
-<title>Research | Naureen Hoque</title><link href="styles.css" rel="stylesheet"/><script defer="" src="script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Research projects of Naureen Hoque in wireless security, cyber deception, adaptive defense, and trustworthy RF intelligence."
+  />
+
+  <title>Research Projects | Naureen Hoque</title>
+
+  <link href="styles.css" rel="stylesheet" />
+  <script defer src="script.js"></script>
 </head>
-<body>
-<a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header"><div class="shell header-inner"><a class="site-name" href="index.html">Naureen Hoque, Ph.D.<small>Assistant Professor</small><small>Grand Valley State University</small></a><button aria-controls="primary-nav" aria-expanded="false" class="menu-button" type="button">Menu</button><nav aria-label="Primary navigation" class="nav-links" id="primary-nav"><a href="index.html">Home</a><a aria-current="page" href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="service.html">Service</a><a href="team.html">Team</a></nav></div></header>
-<main id="main">
-<section class="page-title"><div class="shell"><h1>Research</h1></div></section>
-<div class="content"><div class="shell content-grid"><div class="main-column">
-<section id="interests"><h2>Research areas</h2><dl class="detail-list">
-<div><dt>Wireless and NextG security</dt><dd>Security analysis and defenses for Wi-Fi, connection-establishment protocols, wireless communications, connected devices, and next-generation networks.</dd></div>
-<div><dt>Moving-target defense</dt><dd>Dynamic mechanisms that change models, configurations, and exposed attack surfaces to make reconnaissance and exploitation less reliable.</dd></div>
-<div><dt>Adversarial machine learning</dt><dd>Attacks against learning-enabled wireless systems and robust learning methods for modulation classification, signal analysis, and cyber defense.</dd></div>
-<div><dt>Formal and systematic analysis</dt><dd>Structured analysis of protocol states, pre-authentication behavior, and attacker capabilities to uncover vulnerabilities before deployment.</dd></div>
-<div><dt>Experimental evaluation</dt><dd>Hands-on validation using software-defined radios, wireless testbeds, open datasets, and reproducible implementations.</dd></div>
-</dl></section>
-<section id="testbeds"><h2>Open-source datasets and testbeds</h2><ul class="publication-list">
-<li><span class="pub-year">2023</span><div><p class="pub-title">A Testbed for Experiments and Evaluation of Relay and Spoofing Attack Defenses in the Connection Establishment Phase of Wi-Fi Systems</p><p class="pub-meta"><a href="https://github.com/hoquenaureen/WiFi-preauth">GitHub repository</a></p></div></li>
-<li><span class="pub-year">2023</span><div><p class="pub-title">A Dataset of Obfuscated Wireless Signals and a Testbed for Evaluating Countermeasures Against Modulation Classification Attacks</p><p class="pub-meta"><a href="https://github.com/hoquenaureen/attack-mo">GitHub repository</a></p></div></li>
-</ul></section>
-<section id="talks"><h2>Selected talks and demonstrations</h2><ul class="publication-list">
-<li><span class="pub-year">2026</span><div><p class="pub-title">AI and Cybersecurity in a Wireless World</p><p class="pub-meta">Tech Week: Connecting Research and Industry to Fuel Tech Growth, Grand Rapids.</p></div></li>
-<li><span class="pub-year">2025</span><div><p class="pub-title">Leveraging Deep Learning Models as Moving Targets to Counter Modulation Classification Attacks in Wireless Systems</p><p class="pub-meta">Golisano College of Computing and Information Sciences Colloquium, Rochester Institute of Technology.</p></div></li>
-<li><span class="pub-year">2025</span><div><p class="pub-title">Integrating Systematic Security Analysis and Proactive Defense Strategies in Current and NextG Wireless Systems</p><p class="pub-meta">College of Computing, Grand Valley State University.</p></div></li>
-<li><span class="pub-year">2024</span><div><p class="pub-title">Exploring Secure Connected Vehicles in a Live Demo</p><p class="pub-meta">Imagine RIT, Rochester Institute of Technology.</p></div></li>
-</ul></section>
-</div><aside class="aside"><h2>On this page</h2><ul><li><a href="#interests">Research areas</a></li><li><a href="#testbeds">Datasets and testbeds</a></li><li><a href="#talks">Talks and demos</a></li><li><a href="publications.html">Publication list</a></li></ul></aside></div></div>
-</main><footer class="site-footer"><div class="shell footer-inner"><span>© <span data-current-year=""></span> Naureen Hoque</span></div></footer>
-</body></html>
+
+<body class="research-page-view">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="site-name" href="index.html">
+        Naureen Hoque, Ph.D.
+        <small>Assistant Professor</small>
+        <small>
+          Department of Information Sciences &amp; Technologies
+        </small>
+        <small>Grand Valley State University</small>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+
+      <nav
+        id="primary-nav"
+        class="nav-links"
+        aria-label="Primary navigation"
+      >
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="service.html">Service</a>
+        <a href="lab.html">Lab</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="shell">
+        <h1>Research Projects</h1>
+      </div>
+    </section>
+
+    <div class="content">
+      <div class="shell content-grid">
+
+        <div class="main-column research-page">
+
+          <!-- Project 1 -->
+          <section id="adaptive-defense">
+            <h2>
+              Cyber Deception and Adaptive Defense in Wireless Systems
+            </h2>
+
+            <h3>Research topics</h3>
+
+            <ul>
+              <li>Cyber deception</li>
+              <li>Moving-target defense</li>
+              <li>Adaptive wireless defenses</li>
+              <li>Modulation obfuscation</li>
+              <li>Defense evaluation and circumvention</li>
+              <li>Adversarial machine learning</li>
+            </ul>
+
+            <h3>Selected publications</h3>
+
+            <ul class="publication-list">
+              <li>
+                <span class="pub-year">2024</span>
+
+                <div>
+                  <p class="publication-entry">
+                    <strong>N. Hoque</strong> and H. Rahbari,
+                    “<a
+                      href="https://doi.org/10.1109/INFOCOM52122.2024.10621413"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >Deep Learning Models as Moving Targets to Counter
+                    Modulation Classification Attacks</a>,”
+                    in <em>Proceedings of the IEEE International Conference
+                    on Computer Communications (INFOCOM)</em>,
+                    Vancouver, Canada, May 2024.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <span class="pub-year">2023</span>
+
+                <div>
+                  <p class="publication-entry">
+                    <strong>N. Hoque</strong> and H. Rahbari,
+                    “<a
+                      href="https://doi.org/10.1145/3558482.3590197"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >Circumventing the Defense against Modulation
+                    Classification Attacks</a>,”
+                    in <em>Proceedings of the ACM Conference on Security
+                    and Privacy in Wireless and Mobile Networks
+                    (WiSec)</em>, pp. 377–382, Guildford,
+                    United Kingdom, May–June 2023.
+                  </p>
+                </div>
+              </li>
+
+              <li class="year-end">
+                <span class="pub-year">2021</span>
+
+                <div>
+                  <p class="publication-entry">
+                    <strong>N. Hoque</strong> and H. Rahbari,
+                    “<a
+                      href="https://doi.org/10.1145/3460120.3485344"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >POSTER: A Tough Nut to Crack: Attempting to Break
+                    Modulation Obfuscation</a>,”
+                    in <em>Proceedings of the ACM SIGSAC Conference on
+                    Computer and Communications Security (CCS)</em>,
+                    pp. 2402–2404, Nov. 2021.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Project 2 -->
+          <section id="rf-intelligence">
+            <h2>Trustworthy RF Intelligence</h2>
+
+            <h3>Research topics</h3>
+
+            <ul>
+              <li>Automatic modulation recognition</li>
+              <li>Zero-shot RF classification</li>
+              <li>Language-guided wireless intelligence</li>
+              <li>Trustworthy AI for radio-frequency systems</li>
+              <li>Generalization to unseen wireless signals</li>
+              <li>Intelligent next-generation IoT receivers</li>
+            </ul>
+
+            <h3>Selected publications</h3>
+
+            <ul class="publication-list">
+              <li class="year-end">
+                <span class="pub-year">2026</span>
+
+                <div>
+                  <p class="publication-entry">
+                    I. C. Llorente and <strong>N. Hoque</strong>,
+                    “Language-Based Zero-Shot Modulation Recognition for
+                    Next-Generation IoT Receivers,”
+                    in <em>Proceedings of the IEEE International Conference
+                    on Artificial Intelligence, Blockchain, and Internet
+                    of Things (AIBThings)</em>, Mount Pleasant, MI,
+                    Sep. 2026.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Project 3 -->
+          <section id="protocol-security">
+            <h2>Wireless Protocol Security</h2>
+
+            <h3>Research topics</h3>
+
+            <ul>
+              <li>Wi-Fi connection-establishment security</li>
+              <li>Pre-authentication attack surfaces</li>
+              <li>Relay and spoofing attacks</li>
+              <li>Denial-of-service vulnerabilities</li>
+              <li>Man-in-the-middle attacks</li>
+              <li>Systematic wireless protocol analysis</li>
+            </ul>
+
+            <h3>Selected publications</h3>
+
+            <ul class="publication-list">
+              <li>
+                <span class="pub-year">2025</span>
+
+                <div>
+                  <p class="publication-entry">
+                    <strong>N. Hoque</strong> and H. Rahbari,
+                    “<a
+                      href="https://doi.org/10.1109/TDSC.2025.3596245"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >Locking Down Relay and Spoofing Attacks during
+                    Concurrent Connection Establishments in 802.11ax</a>,”
+                    <em>IEEE Transactions on Dependable and Secure
+                    Computing</em>, vol. 22, no. 6,
+                    pp. 7287–7301, Dec. 2025.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <span class="pub-year">2023</span>
+
+                <div>
+                  <p class="publication-entry">
+                    <strong>N. Hoque</strong> and H. Rahbari,
+                    “<a
+                      href="https://doi.org/10.1145/3558482.3590185"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >Countering Relay and Spoofing Attacks in the
+                    Connection Establishment Phase of Wi-Fi Systems</a>,”
+                    in <em>Proceedings of the ACM Conference on Security
+                    and Privacy in Wireless and Mobile Networks
+                    (WiSec)</em>, pp. 275–285, Guildford,
+                    United Kingdom, May–June 2023.
+                  </p>
+                </div>
+              </li>
+
+              <li class="year-end">
+                <span class="pub-year">2022</span>
+
+                <div>
+                  <p class="publication-entry">
+                    <strong>N. Hoque</strong>, H. Rahbari,
+                    and C. Rezendes,
+                    “<a
+                      href="https://doi.org/10.1109/CNS56114.2022.9947252"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >Systematically Analyzing Vulnerabilities in the
+                    Connection Establishment Phase of Wi-Fi Systems</a>,”
+                    in <em>Proceedings of the IEEE Conference on
+                    Communications and Network Security (CNS)</em>,
+                    pp. 64–72, Austin, TX, Oct. 2022.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Research infrastructure -->
+          <section id="infrastructure">
+            <h2>Research Infrastructure</h2>
+
+            <h3>Datasets and testbeds</h3>
+
+            <ul>
+              <li>
+                Wi-Fi pre-authentication attack and defense testbed
+              </li>
+
+              <li>
+                Obfuscated wireless-signal dataset
+              </li>
+
+              <li>
+                Modulation-classification attack evaluation testbed
+              </li>
+
+              <li>
+                Software-defined radio experimentation environment
+              </li>
+            </ul>
+          </section>
+
+        </div>
+
+        <aside class="aside">
+          <h2>On this page</h2>
+
+          <ul>
+            <li>
+              <a href="#adaptive-defense">
+                Cyber deception and adaptive defense
+              </a>
+            </li>
+
+            <li>
+              <a href="#rf-intelligence">
+                Trustworthy RF intelligence
+              </a>
+            </li>
+
+            <li>
+              <a href="#protocol-security">
+                Wireless protocol security
+              </a>
+            </li>
+
+            <li>
+              <a href="#infrastructure">
+                Research infrastructure
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>
+        © <span data-current-year></span> Naureen Hoque
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
