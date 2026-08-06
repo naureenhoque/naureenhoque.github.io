@@ -868,9 +868,8 @@ img {
     max-width: 330px;
   }
 
-  .two-column,
-  .content-grid {
-    grid-template-columns: 1fr;
+  .two-column {
+  grid-template-columns: 1fr;
   }
 
   .aside {
