@@ -869,7 +869,13 @@ img {
   }
 
   .two-column {
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-grid {
+    grid-template-columns: 1fr;
   }
 
   .aside {
